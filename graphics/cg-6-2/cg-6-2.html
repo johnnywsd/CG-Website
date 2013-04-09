@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <title>cg-6-part2</title>
+  <style type="text/css">
+body{
+	background-color:#d0d0f0;
+}
+  #applet {
+	width:400px;
+    height:400px;
+	float: left;
+	}
+
+	#note {
+	width: 300px;
+    height: 400px;
+	float:left;
+	}
+
+	#footer{
+	clear:both;	
+	}
+	
+  </style>
+</head>
+
+<body> 
+<h1>Assinment 6-part2</h1>
+<div id="applet"><applet code=MyMISApplet.class width=400 height=400>
+   </applet>
+</div> 
+<div id="note">
+<p><h4>Scan converting polygons:</h4><p>
+<p>
+<ul>
+<li>It uses the Geometry class I made before and extends MISApplet</li>
+<li>Please refresh, if you cannot see anything</li>
+</ul>
+</p>
+</div>
+
+<div id = "footer">
+<p><h4><a href="./cg-6-2-src.tar.gz">Download source code</a></h4></p>
+<p><h4><a href="../index.html">Back to home</a></h4></p>
+
+<hr/>
+<h2>Another solution</h2>
+<div>
+<p>Actually, I have figured out this problem in my previous homework using vector.</p>  
+<p>Exclude faces that are not visible. To do this, compute the outward normal to
+each face, and exclude any face whose normal has a positive z-component. To find the outward
+normal to a face, choose any three consecutive vertices of the face a, b, c; the cross-product
+(c - b) x (a - b) is the outward normal.</p>
+<p>Here is my previous <a href="../cg-4/cg-4.html">Homework 4</a>. If you select "Skeleton", the invisible line will be shown as dash. If you select "Soild", only the visible face will be shown</p>
+</div>
+<iframe src="../cg-4/cg-4.html" width="1200" height="750"></iframe>
+
+</div>
+</bodu>
+</html>
